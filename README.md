@@ -1,12 +1,14 @@
 # swift-argument-parser 使用示例
 
-编写命令行工具时，使用 [swift-argument-parser](https://github.com/apple/swift-argument-parser) 可方便地读出用户提供的参数，如果参数有误，还会提供命令使用说明。  
+在编写命令行工具时，使用 [swift-argument-parser](https://github.com/apple/swift-argument-parser) 可方便地读出用户提供的参数，如果参数有误，还会输出命令使用说明。  
 
 ## 集成方法和介绍
 
 https://github.com/apple/swift-argument-parser
 
-## 基本用法：以 HLBRepeat 为例
+## 基本用法：以 [HLBRepeat](https://github.com/Bob-Playground/ArgumentParserExample/blob/master/HLBRepeat/HLBRepeat.swift) 为例
+
+说明：另外两个例子 [HLBMath](https://github.com/Bob-Playground/ArgumentParserExample/blob/master/HLBMath/HLBMath.swift  ) 和 [HLBRoll](https://github.com/Bob-Playground/ArgumentParserExample/blob/master/HLBRoll/main.swift) 请直接看源码。  
 
 ```swift
 import ArgumentParser
@@ -88,6 +90,6 @@ $ ./HLBRepeat --include-counter -c 3 haha
 
 ## 发布命令行工具
 
-进入 Xcode-Product-Archive，按常规步骤打包发布。  
+进入 Xcode -> Product -> Archive，按常规步骤打包发布。  
 
 将命令行工具添加到环境变量中即可使用。
